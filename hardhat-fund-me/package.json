@@ -1,5 +1,6 @@
 {
   "name": "hardhat-fund-me",
+  "author": "Piotr Gąsiorek",
   "version": "1.0.0",
   "license": "MIT",
   "devDependencies": {
@@ -23,10 +24,17 @@
     "hardhat": "^2.22.4",
     "hardhat-deploy": "^0.12.4",
     "hardhat-gas-reporter": "^1.0.8",
-    "solhint": "^5.0.1",
     "solidity-coverage": "^0.8.0",
     "ts-node": ">=8.0.0",
     "typechain": "^8.3.0",
     "typescript": ">=4.5.0"
+  },
+  "scripts": {
+    "test": "yarn hardhat test",
+    "test-staging": "yarn hardhat test --network sepolia",
+    "lint": "yarn solhint 'contracts/*.sol",
+    "compile": "yarn hardhat compile",
+    "deploy": "yarn hardhat deploy --network sepolia",
+    "coverage": "yarn hardhat coverage"
   }
 }
