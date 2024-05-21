@@ -16,7 +16,7 @@ contract FundMe {
     using PriceConverter for uint256;
 
     // State variables
-    uint256 constant MINIMUM_USD = 50 * 1e18;
+    uint256 constant MINIMUM_USD = 1 * 1e18;
     address private immutable i_owner;
 
     address[] private s_funders;
